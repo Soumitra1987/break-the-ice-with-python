@@ -77,6 +77,22 @@ runnerup = max(lst)
 print(runnerup)
 ```
 ---
+```python
+''' Solution by: Soumitra
+'''
+runnerScr = int(input("enter Runner up Score:"))
+fullScore = input ("Enter full Scorecard:").split(" ")
+Scorelist =[]
+
+for i in fullScore:
+        Scorelist.append(int(i))
+print(Scorelist)
+if runnerScr in Scorelist:
+    print("The Score Found:",runnerScr)
+else:
+    print("not there")
+   ``` 
+  ---  
 
 # Question 96
 
