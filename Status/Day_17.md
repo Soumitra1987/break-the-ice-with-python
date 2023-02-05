@@ -169,6 +169,29 @@ Array = [1,5,8,10,12,13,55,66,73,78,82,85,88,99]
 print('The Value Found at Index:',binary_search_Ascending(Array, 82))
 
 ```
+---
+
+***Solution by Soumitra: Python3***
+'''python
+LList = input("Enter the item list:").split(",")
+li = []
+for item in LList:
+    li.append(int(item))
+print(li)
+while True:
+    Nm = int(input("Enter the Number you want to Search:"))
+    pos = []
+    if Nm in li:
+        for n in range(len(li)):                                                    
+            if li[n] == Nm:
+                pos.append(str(n+1))
+        print("The Given Number found in the list at Location of:" + ",".join(pos))      #to print the final output in a line
+    else:
+        print("Not found, it is not there")
+
+'''
+
+---
 
 ---
 
@@ -192,6 +215,7 @@ def bs(num,num_list):
 print(bs(66,[1,5,8,10,12,13,55,66,73,78,82,85,88,99,100]))
 
 ```
+
 
 ---
 
